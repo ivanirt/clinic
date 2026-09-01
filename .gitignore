@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+
+# Local npm cache used when the default cache is blocked (Windows sandbox)
+.npm-cache/
+
+# Secrets — never commit .env (contains FHIR_BASE_URL / FHIR_BEARER_TOKEN)
+.env
+
+# Logs / OS cruft
+npm-debug.log*
+*.log
+.DS_Store
+Thumbs.db

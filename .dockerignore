@@ -1,0 +1,20 @@
+# ─────────────────────────────────────────────────────────────────────────
+# Build context exclusions.
+# Secrets (.env) and local artifacts must never end up in the image.
+# ─────────────────────────────────────────────────────────────────────────
+
+# Secrets — never copy into the build context
+.env
+.env.*
+!.env.example
+
+# Local dependencies & caches
+node_modules
+.npm-cache
+
+# VCS & OS cruft
+.git
+.gitignore
+*.log
+.DS_Store
+Thumbs.db
